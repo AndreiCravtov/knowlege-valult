@@ -1,0 +1,17 @@
+Cantor's theorem states that for any [[Set Theory|set]] $A$, it's [[Cardinality of Sets|cardinality]] isn't the same as the cardinality of the [[Power Sets|power set]] of $A$.
+
+# Formal Definition
+This result is formally stated as, $$\text{For any set} \ A, \ |A| < |\wp A|$$
+
+## Proof of Theorem
+### Proving that $|A| \leq |\wp A|$
+We define a function $g: A \to \wp A$ as follows: $g(a) = \{ a \}$. Take some arbitrary elements $x,x' \in A$, therefore we have that '$g(x)=\{ x \}$' and '$g(x') = \{ x' \}$' both hold. Now assume that '$g(x)=g(x')$' holds, therefore, we have that '$\{x\} = \{x'\}$'. Since the two sets are equal and there is only one element in each, the element must be the same, so we have it that '$x=x'$' holds, assuming '$g(x)=g(x')$' holds. Showing implies, we have it that '$g(x)=g(x') \implies x=x'$' holds. Since $x,x'$ are arbitrary, we have it that '$\forall a,a' \in A ( g(a)=g(a') \implies a=a' )$' holds. Using the definition of injection, we have it that '$g \ \text{is injective}$' holds. Since $g$ is a particular function, we have it that '$\exists f: A \to \wp A(f \ \text{is injective})$' holds. Using the definition of [[Cardinality of Sets#$ A leq B $|less than or equal to]], we have it that '$|A| \leq |\wp A|$' holds, shown.
+
+## Proving that $A \not \approx \wp A$
+Let $g: A \to \wp A$ be an arbitrary function. Since $g$ maps to the set of all subsets of $A$, then for some arbitrary element $a \in A$, '$g(a) \subseteq A$' holds. Thus it holds that '$a \in g(a) \vee a \not\in g(a)$'. Define $$B \triangleq \{ a \in A | a \not\in g(a) \}$$ as a set. Hence, '$B \subseteq A$' holds, so '$B \in \wp A$' holds. Now assume that '$g \ \text{is surjective}$' holds, therefore '$\forall b' \in \wp A, \exists b \in A (g(b)=b')$' holds. Since $B$ is a particular element of $\wp A$, then we have that '$\exists b \in A (g(b) = B)$' holds. Let $a \in A$ be the element for which this is true, therefore we have that '$g(a)=B$' holds. We also have it that '$a \in g(a) \vee a \not\in g(a)$' holds.
+- Case: '$a \in g(a) = B$' holds. By definition of $B$, we have that '$a \in B$' holding implies '$a \not\in g(a)$' holding. Contradiction.
+- Case: '$a \notin g(a) = B$' holds. From '$a \notin g(a)$' we note that $a$ satisfies the predicate in the definition of $B$, thus we have it that '$a \in B$'. Contradiction.
+Using or, we have that the assumption '$g \ \text{is surjective}$' leads to contradictions. Thus we reject it and conclude that '$g \ \text{is not surjective}$' holds. Using or, we have '$g \ \text{is not surjective} \vee g \ \text{is not injective}$' holds. Using implies, we have '$\neg(g \ \text{is surjective} \wedge g \ \text{is injective})$' holds. Using the definition of bijection, we have that '$\neg(g \ \text{is a bijection})$' holds. Since $g$ is an arbitrary function, we can say that '$\forall f : A \to \wp A (\neg(f \ \text{is bijective}))$' holds, which implies, '$\neg(\exists f: A \to \wp A (f \ \text{is bijective}))$' golds. Using the definition of [[Cardinality of Sets#Equinumerosity 'relation'|equinumerosity]], we have that '$A \not \approx \wp A$' holds, shown.
+
+## Combining $|A| \leq |\wp A|$ and $A \not \approx \wp A$
+'$A \not \approx \wp A$' holds, which implies '$|A| \ne |\wp A|$' holds. Showing and, we have '$|A| \leq |\wp A| \wedge |A| \ne |\wp A|$' holds. Using the definition of [[Cardinality of Sets#$ A < B $|strictly less than]], we have that '$|A| < |\wp A|$' holds, shown.

@@ -1,0 +1,3 @@
+This is an extension of the classical [Cantor-Bernstein theorem](https://en.wikipedia.org/wiki/Schr%C3%B6der%E2%80%93Bernstein_theorem) that includes the result for two [[Mathematical Functions#Surjective Functions|surjective functions]] too. The classical variant only works for two [[Mathematical Functions#Injective Functions|injective functions]].
+
+For some function $f: A \to B$ and $g: B \to A$, the theorem states that: $$\exists f:A \to B, \exists g: B \to A (f,g \ \text{are injective} \vee f,g \ \text{are surjective}) \implies \exists h: A \to B (h \ \text{is bijective})$$

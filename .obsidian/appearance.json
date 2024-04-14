@@ -1,0 +1,8 @@
+{
+  "accentColor": "#8b53d0",
+  "baseFontSize": 20,
+  "theme": "system",
+  "enabledCssSnippets": [
+    "wide-notes"
+  ]
+}
