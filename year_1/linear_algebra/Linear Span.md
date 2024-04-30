@@ -1,4 +1,4 @@
-Given some set of vectors $S$, the set of all vectors you can make by applying the [[Vector Space#Formal Definition|axioms of a vector space]], is called the *linear span* of $S$. Alternatively - given some vector space $V$, we can think of the *linear span* of $S \subseteq V$ as the smallest [[Linear Subspace|subspace]] of $V$ that contains $S$. Or in the case of a [[Cardinality of Sets#Finite Sets|finite]] $S$, it is the set of all of all [[Vector Space#Linear Combination|linear combinations]] of the elements in $S$.
+Given some set of vectors $S$, the set of all vectors you can make by [[Vector Space#Formal Definition|combining them]] is called the ***linear span*** *(or linear hull)* of $S$. Alternatively - given some vector space $V$, we can think of the *linear span* of $S \subseteq V$ as the smallest [[Linear Subspace|subspace]] of $V$ that contains $S$. Or in the case of a [[Cardinality of Sets#Finite Sets|finite]] $S$, it is the set of all of all [[Vector Space#Linear Combination|linear combinations]] of the elements in $S$.
 
 The **linear span** of $S$ is denoted as $span(S)$. If $W = span(S)$, then we say that:
  - $S$ spans $W$

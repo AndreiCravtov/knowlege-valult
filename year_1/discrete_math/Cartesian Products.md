@@ -1,71 +1,30 @@
-The Cartesian product of $A$ and $B$ is written as $A \times B$. The resulting set from this operation is defined as follows:
-1. An *ordered pair* of elements $a \in A$ and $b \in B$ is written as $\langle a,b \rangle$.
-2. $A \times B$ is the set of all possible ordered pairs of all the elements in set $A$ and $B$. The formal definition is $$A \times B \triangleq \{ \ \langle a, b \rangle \ | \ a \in A \ \wedge \ b \in B \ \}$$
-***NOTE:** $A^2$ is shorthand for $A \times A$.*
-3. Equality on elements of $A \times B$ is defined as: $$\begin{gathered}
-=_{A \times B} \ \triangleq \ \{ \ \langle p_{1}, p_{2} \rangle \in (A \times B)^2 \ |\  \exists a,c \in A \ \ \ b, d \in B ( \ p_{1} = \langle a,b \rangle \ \wedge \ p_{2} = \langle c,d \rangle \ \wedge \ a =_{A} c \ \wedge \ b =_{B} d \ ) \ \} \\ \\
-\text{or} \\ \\
+#set-theory
 
-=_{A \times B} \ \triangleq \ \{ \ \langle \langle a, b \rangle, \langle c, d \rangle \rangle \in (A \times B)^2 \ | \ a =_{A} c \ \wedge \ b =_{B} d \ \} \\ \\
-\text{or} \\ \\
-
-\langle a, b \rangle =_{A \times B} \langle c, d \rangle \ \triangleq \ a =_{A} c \ \wedge \ b =_{B} d
-
-\end{gathered}$$
-
-# Visualisation
-A way to visualise $A \times B$ is 
+The ***Cartesian product*** of two [[Set Theory|sets]] $A$ and $B$, denoted $A \times B$, is the set of all [[Ordered Pair|ordered pairs]] $\opair{a}{b}$ where $a \in A$ and $b \in B$, written as
+$$\large A \times B \ \ \triangleq \ \ \{ \ \opair{a}{b} \ | \ a \in A \wedge b \in B \ \}$$
+visualised as
+$$\large
+\begin{matrix}
+\opair{a_{1}}{b_{1}} & \dots & \opair{a_{1}}{b_{m}}  \\
+\vdots & \ddots & \vdots \\
+\opair{a_{n}}{b_{1}} & \dots & \opair{a_{n}}{b_{m}}
+\end{matrix}
 $$
-\begin{gathered}
+If you're taking the ***Cartesian product*** of $A \times A$ then you can use the shorthand $A^2$
 
-\begin{gathered}[c]
-\langle a_{1}, b_{1} \rangle
-\end{gathered}
 
-\begin{gathered}[c]
-& \dots &
-\end{gathered}
+# Formal Definition
+Formally, elements [[Naive Set Theory#Solution|have to be selected]] from some other set. Using the [Kuratowski](https://en.wikipedia.org/wiki/Kazimierz_Kuratowski) definition of [[Ordered Pair|ordered pairs]], i.e. $\opair{a}{b} = \{ \{ a \}, \{ a, b \} \}$, we thus can select elements from $\wp\wp A \cup B$ (all of which are [[Ordered Pair|ordered pairs]]) to define the ***Cartesian product***
+$$\large A \times B \ \ \triangleq \ \ \{ \ \opair{a}{b} \in \wp\wp A \cup B \ | \ a \in A \wedge b \in B \ \}$$
+where $\wp A$ is the [[Power Sets|power set]] of $A$.
 
-\begin{gathered}[c]
-\langle a_{1}, b_{m} \rangle
-\end{gathered} \\
-
-\begin{gathered}[c]
-\vdots &&&
-\end{gathered}
-
-\begin{gathered}[c]
-\ddots &&&
-\end{gathered}
-
-\begin{gathered}[c]
-\vdots
-\end{gathered} \\
-
-\begin{gathered}[c]
-\langle a_{n}, b_{1} \rangle
-\end{gathered}
-
-\begin{gathered}[c]
-& \dots &
-\end{gathered}
-
-\begin{gathered}[c]
-\langle a_{n}, b_{m} \rangle
-\end{gathered}
-
-\end{gathered}
-$$
 # Properties
-## Non-commutative
-The $\times$ operation is not commutative, so $A \times B \not= B \times A$.
+The ***Cartesian product*** is not commutative, so $A \times B \not= B \times A$.
 
-## Cardinality
 The [[Cardinality of Sets|cardinality]] of $A \times B$, for some finite sets $A$ and $B$, is $|A\times B|=|A| \times |B|$.
 # $n$-ary product
-The $n$-ary product is the extrapolation of the Cartesian product from a binary operator to an $n$-ary operator, but keeping the same principle.
-1. For any $n>1$, the $n$-tuple is an *ordered sequence* is $\langle a_{1},\dots, a_{n} \rangle$ of $n$ objects.
-2. Let $A_{1},\dots,A_{n}$ be arbitrary sets. The $n$-ary product is written as $A_{1}\times \dots \times A_{n}$, or $\times^{n}_{i=1}A_{i}$, defined as $\{ \ \langle a_{1},\dots, a_{n} \rangle \ | \ i \in \mathbb{N} \ ( 1 \leq i \leq n \implies a_{i} \in A_{i} ) \ \}$.
+Just as [[Tuple|tuples]] are the *extrapolation* of [[Ordered Pair|ordered pairs]], so is the $n$***-ary product*** is the *extrapolation* of the ***Cartesian product***.
+1. Let $A_{1},\dots,A_{n}$ be arbitrary sets. The $n$***-ary product*** is written as $A_{1}\times \dots \times A_{n}$, or $\times^{n}_{i=1}A_{i}$, defined as $\{ \ \langle a_{1},\dots, a_{n} \rangle \ | \ i \in \mathbb{N} \ ( 1 \leq i \leq n \implies a_{i} \in A_{i} ) \ \}$.
 3. The $n$-ary product of $A$ is written as $A^n$.
 
 ## Weak equivalence

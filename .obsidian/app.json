@@ -1,7 +1,7 @@
 {
   "newFileLocation": "current",
   "attachmentFolderPath": "attachments",
-  "promptDelete": false,
+  "promptDelete": true,
   "alwaysUpdateLinks": true,
   "pdfExportSettings": {
     "pageSize": "A4",
@@ -11,5 +11,8 @@
   },
   "userIgnoreFilters": [
     "attachments/"
-  ]
+  ],
+  "propertiesInDocument": "source",
+  "defaultViewMode": "preview",
+  "livePreview": true
 }

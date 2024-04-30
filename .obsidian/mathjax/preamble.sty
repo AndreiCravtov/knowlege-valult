@@ -1,0 +1,24 @@
+% general
+\newcommand{\pow}[2]{#1^{\Large#2}}
+\newcommand{\sub}[2]{#1_{\large#2}}
+\newenvironment{left}{\begin{flalign}}{&&\end{flalign}}
+\newenvironment{leftalign}{\begin{left}\begin{aligned}}{\end{aligned}\end{left}}
+
+% set theory
+\newcommand{\opair}[2]{\langle{#1},{#2}\rangle}
+\newcommand{\frestrict}[2]{\left.{#1}\right|_{#2}}
+
+%linear algebra
+\newcommand{\rank}{\mathrm{rank}}
+
+% relational algebra
+\newcommand{\codename}[2]{{#1}.\!{#2}}
+\newcommand{\remrel}[1]{\sub{\rho}{#1}}
+\newcommand{\notrel}[1]{\overline{#1}}
+\newcommand{\andrel}{{\ \& \ }}
+\newcommand{\orrel}{{\ | \ }}
+\newcommand{\rename}[2]{\sub{#1}{#2}}
+\newcommand{\project}[1]{\sub{\pi}{#1}}
+\newcommand{\select}[1]{\sub{\sigma}{#1}}
+\newcommand{\thetajoin}[1][\theta]{\overset{#1}\Join}
+\newcommand{\fk}{\overset{fk}\Rightarrow}

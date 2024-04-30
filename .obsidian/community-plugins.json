@@ -1,17 +1,17 @@
 [
+  "markdown-attributes",
   "table-editor-obsidian",
-  "obsidian-excalidraw-plugin",
-  "obsidian-desmos",
-  "darlal-switcher-plus",
-  "obsidian-spaced-repetition",
-  "editing-toolbar",
-  "obsidian-annotator",
   "dataview",
-  "obsidian-mind-map",
+  "obsidian-desmos",
   "obsidian-dictionary-plugin",
-  "calendar",
-  "obsidian-kanban",
+  "editing-toolbar",
+  "obsidian-excalidraw-plugin",
+  "obsidian-latex",
+  "find-unlinked-files",
   "obsidian-latex-suite",
+  "mathlinks",
+  "obsidian-mind-map",
+  "darlal-switcher-plus",
   "obsidian-tikzjax",
-  "obsidian-latex"
+  "obsidian-plantuml"
 ]

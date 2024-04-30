@@ -86,7 +86,7 @@ So if we know $R$ is transitive, then $R \circ R = R$, all the new direct links 
 ### Transitive Closure
 The transitive closure is a way to turn a non-transitive relation into a transitive relation. In fact, it is the smallest transitive relation containing $R$. Consider some $R$ that is a binary relation on set $A$.
 ![[Pasted image 20231104163913.png|500]]
-The $transitive \ closure \ of \ R$, written as $R^+$, is achieved by composing $R$ with itself over and over again, until it has achieved transitivity:
+The $\text{transitive closure of} \ R$, written as $R^+$, is achieved by composing $R$ with itself over and over again, until it has achieved transitivity:
 $$
 \begin{gathered}
 & R^1=R \\
@@ -95,7 +95,7 @@ $$
 & \vdots \\
 & R^n = R^{n-1} \circ R \\
 & \vdots \\
-transitive \ closure \ of \ R: & R^+ \triangleq R \cup R^2 \cup \dots \cup R^n \cup \dots
+\text{transitive closure of} \ R: & R^+ \triangleq R \cup R^2 \cup \dots \cup R^n \cup \dots
 \end{gathered}
 $$
 It can be intuitively be thought of as, $aR^+b$ if there is any path between $a$ and $b$ in $R$, even if we have to take multiple trips. So $R^+$ ends up looking like this:

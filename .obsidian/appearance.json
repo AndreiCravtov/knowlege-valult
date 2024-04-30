@@ -3,6 +3,9 @@
   "baseFontSize": 20,
   "theme": "system",
   "enabledCssSnippets": [
-    "wide-notes"
+    "wide-notes",
+    "math-left",
+    "img-grid",
+    "general"
   ]
 }

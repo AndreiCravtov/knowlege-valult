@@ -15,9 +15,13 @@ f \ \text{is a partial function} \\
 \forall a \in A,\exists b \in B(\langle a,b \rangle \in f)
 \end{gathered}
 $$
-We therefore say that $f$ is a function from $A$ to $B$, or $f: A \to B$. The set of all functions from $A$ to $B$ is denoted as $B^A$ and defined as: $$B^A \triangleq \{ \ f \in \wp(A \times B) \ | \ f \ \text{is a function} \ \}$$Notice how $f \in B^A$ is equivalent to $f: A \to B$, therefore $A \to B$ is equivalent to $B^A$. Hence, if we want to write for example $\forall f \in B^A(\dots)$, it is entirely acceptable to say $\forall f: A\to B(\dots)$.
+For some $a \in A$, $f(a)$ is the shorthand for "the unique $b \in B$ such that $\langle a,b\rangle \in f$, and $f$ is said to **map** $a$ to $b$". We also can say that $b$ is the **image**, and $a$ is the **pre-image**/**inverse image**, under $f$.
 
-For some $a \in A$, $f(a)$ is the shorthand for: the unique $b \in B$ such that $\langle a,b\rangle \in f$, and $f$ is said to **map** $a$ to $b$. We also can say that $b$ is the **image**, and $a$ is the **pre-image**/**inverse image**, under $f$.
+## Function type notation
+Since $f$ is relation on $A\times B$, we therefore say that $f$ is a function from $A$ to $B$, or $f: A \to B$. This is the ***function type notation***, which tells you what the ***type*** of the function is. The set of all functions from $A$ to $B$ is denoted as $B^A$ and defined as: $$B^A \triangleq \{ \ f \in \wp(A \times B) \ | \ f \ \text{is a function} \ \}$$Notice how $f \in B^A$ is equivalent to $f: A \to B$, therefore $A \to B$ is equivalent to $B^A$. Hence, if we want to write for example $\forall f \in B^A(\dots)$, it is entirely acceptable to say $\forall f: A\to B(\dots)$. 
+
+## Multivariate Function Syntax
+If there is a function with a [[#Domains, co-domains, ranges|domain]] of an $n\text{-ary}$ product $A=X^n$, then we don't write $f(\langle a_{1},a_{2},\dots,a_{n} \rangle)$, instead we write $f(a_{1}, a_{2},\dots,a_{n})$ and call $f$ a **multivariate** function that takes $n$ arguments.
 
 ## Domains, co-domains, ranges
 In the above example, $A$ is the **domain**, and $B$ is the **co-domain**. However, it is possible that $f$ does not map to all of $B$, but only some of it. Those element of $B$ which are mapped to, form a subset of the co-domain called the **range**. The range, the set of all images of $f$, is often written as $f[A]$, the [[#Image Sets|image set]] of $f$.
@@ -25,9 +29,6 @@ In the above example, $A$ is the **domain**, and $B$ is the **co-domain**. Howev
 Here is a visualisation:
 ![[Pasted image 20231105171626.png|400]]
 The red is the **domain**, the blue is the **co-domain**, and the yellow is the **range**.
-
-## Multivariate Function Syntax
-If there is a function with a [[#Domains, co-domains, ranges|domain]] of an $n\text{-ary}$ product $A=X^n$, then we don't write $f(\langle a_{1},a_{2},\dots,a_{n} \rangle)$, instead we write $f(a_{1}, a_{2},\dots,a_{n})$ and call $f$ a **multivariate** function that takes $n$ arguments.
 
 ## Function Equality
 For two functions $f: A \to B$ and $g: A \to B$, functional equality is defined as: $$f =_{A\to B} g \triangleq \forall a \in A(\ f(a) =_{B} g(a) \ )$$
@@ -97,4 +98,24 @@ If some $f: A \to B$ has an inverse function $f^{-1}$ then $f$ is a [[#Bijective
 
 We can also relate it back to [[Relations on Sets#Operators|relational inverses]], namely that if some $f: A \to B$ is a [[#Bijective Functions|bijection]] then it's **relational inverse**, $f^{-1}$, is also a function, and also the  inverse function of $f$. So: $$f \ \text{is a bijection} \implies f^{-1} \ \text{is the inverse function of} \ f \wedge f^{-1} \ \text{is a bijection}$$
 
+## Domain Restriction
+If you have some function $f: C \to B$, and you want to ***restrict*** its domain to the subset $A \subseteq C$, then you can define the ***domain restricted*** function $\frestrict{f}{A}: A \to B$ as
+$$\frestrict{f}{A} \ \ \triangleq \ \ \{ \ \opair{a}{b} \in f \ | \ a \in A \ \}$$
 
+## Currying, Uncurrying, and Partial Application
+Take some function $f: X \times Y \to Z$ from [[Cartesian Products|Cartesian product]] $X \times Y$ into $Z$. We call ***currying*** the process of <u>transforming</u> $f$ into the function function $\mathtt{curry}(f): X \to (Y \to Z); \ \ x \mapsto \left(y \mapsto f(x,y) \right)$, which for every $x \in X$ returns $\mathtt{curry}(f)(x) = \sub{f}{x}$ and for every $y \in Y$ we get $\sub{f}{x}(y) = f(x,y)$, this is summarised as $\mathtt{curry}(f)(x)(y) = f(x,y)$. The process of applying arguments <u>one-by-one</u> to $\mathtt{curry}(f)$ is called ***partial application***. The process that transforms $\mathtt{curry}(f)$ back into $f$ is called ***uncurrying***, i.e. $f = \mathtt{uncurry}(\mathtt{curry}(f))$.
+
+The set of functions [[#Function type notation|set of all functions]] $A \to B$ can [[#Function type notation|also be written as]] $B^A$, so we can rewrite $X \times Y \to Z$ and $X \to (Y \to Z)$ as $Z^{X \times Y}$ and $(Z^Y)^X$. Therefore, we can <u>formalise</u> ***currying*** and ***uncurrying*** as the [natural equivalence](https://en.wikipedia.org/wiki/Natural_equivalence) $Z^{X \times Y} \cong (Z^Y)^X$ between $Z^{X \times Y}$ and $(Z^Y)^X$
+$$\large
+\begin{align}
+\sub{(\cdot)}{(\cdot)} \ \ &: \ \ \big( Z^{X \times Y} \times X \big) \to Z^Y  \\
+(f,x) \ \ &\mapsto \ \ \Big[ y \mapsto f(x,y) \Big] \\
+ \\
+\mathtt{curry} \ \ &: \ \ Z^{X \times Y} \to (Z^Y)^X \\
+f \ \ &\mapsto \ \ \Big[ x \mapsto \sub{f}{x} \Big] \\
+ \\
+\mathtt{uncurry} \ \ &: \ \ (Z^Y)^X \to Z^{X \times Y} \\
+f \ \ &\mapsto \ \ \Big[ (x,y) \mapsto f(x)(y) \Big]
+\end{align}
+$$
+where $\mathtt{curry}$ and $\mathtt{uncurry}$ are [[#Bijective Functions|bijective functions]] and hence $\mathtt{curry} = (\mathtt{uncurry})^{-1}$.

@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "80d85423decb3f08",
+        "id": "84f4d32cfb6135d7",
         "type": "tabs",
         "children": [
           {
-            "id": "35934aea9c449357",
+            "id": "296f32c1ed39b3d6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -49,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mathem",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,29 +76,11 @@
         "type": "tabs",
         "children": [
           {
-            "id": "60e96cb471e6d76e",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "README.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
-              }
-            }
-          },
-          {
             "id": "1ab99e967e4a8cb0",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,33 +102,31 @@
             "type": "leaf",
             "state": {
               "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "b4bb875da33d7cc5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
               "state": {
-                "file": "README.md"
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
               }
-            }
-          },
-          {
-            "id": "74974b2cb66e93db",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
-            "id": "058e210f89625e64",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {}
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 340.5,
+    "width": 471.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -165,57 +140,56 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "darlal-switcher-plus:Open in Headings Mode": false,
-      "darlal-switcher-plus:Open Symbols for the active editor": false,
-      "obsidian-spaced-repetition:Review flashcards": false
+      "darlal-switcher-plus:Open Symbols for the active editor": false
     }
   },
-  "active": "058e210f89625e64",
+  "active": "296f32c1ed39b3d6",
   "lastOpenFiles": [
-    "preamble.sty",
-    "year_1/discrete_math/Proof-Sketch.md",
-    "year_1/discrete_math/Proof Results for Exams.md",
-    "year_1/discrete_math/Indicator Function.md",
-    "year_1/discrete_math/Cantor's Theorem.md",
-    "year_1/discrete_math/(Dual) Cantor-Bernstein theorem.md",
-    "Generalized compact knapsacks.md",
-    "misc/Backlog.md",
-    "misc/Routines.md",
-    "year_1/calculus/Partial Derivative.md",
-    "year_1/calculus/Differentiation of Real Functions.md",
-    "year_1/calculus/Gradient.md",
-    "attachments/Pasted image 20240317000209.png",
-    "year_1/calculus/Taylor's Theorem.md",
-    "year_1/calculus/Multi-Index Notation.md",
-    "year_1/calculus/Taylor Series.md",
-    "year_1/calculus/Analytic Function.md",
-    "year_1/calculus/Continuity.md",
-    "year_1/calculus/Power Series.md",
-    "year_1/calculus/Series.md",
-    "year_1/calculus/Accumulation Point.md",
-    "year_1/calculus/Limit of a Function.md",
-    "year_1/calculus/Open Set.md",
-    "year_1/calculus/Neighbourhood.md",
-    "year_1/calculus/Balls in Metric Spaces.md",
-    "attachments/Pasted image 20240314023341.png",
-    "attachments/Pasted image 20240314023339.png",
-    "attachments/Pasted image 20240311042158.png",
-    "year_1/calculus/Convergence of Sequences.md",
-    "attachments/Pasted image 20240310040513.png",
+    "year_1/linear_algebra/temp_matrix/Square Matrix (algebraic).md",
+    "year_1/linear_algebra/temp_matrix/Matrix.md",
+    "year_1/linear_algebra/Basis of Vector Space.md",
+    "year_1/linear_algebra/Vector Space.md",
+    "year_1/linear_algebra/READ!!! MEEEE!!!.md",
+    "year_1/linear_algebra/temp_matrix/Transformation Matrix.md",
+    "year_1/linear_algebra/Linear Map.md",
+    "attachments/Pasted image 20240430151543.png",
+    "attachments/Pasted image 20240430121821.png",
+    "year_1/discrete_math/Group Action.md",
+    "attachments/Pasted image 20240430113820.png",
+    "year_1/linear_algebra/Affine Space.md",
     "year_1/discrete_math/Mathematical Functions.md",
-    "attachments/Pasted image 20240304232847.png",
-    "attachments/Pasted image 20240220200907.png~",
-    "attachments/Pasted image 20240220200907.png",
-    "attachments/Pasted image 20240220195732.png~",
-    "attachments/Pasted image 20240220195732.png",
-    "attachments/Pasted image 20240220195724.png",
-    "attachments/Pasted image 20240220194008.png~",
-    "attachments/Pasted image 20240220194008.png",
-    "attachments/Pasted image 20240208204335.png~",
-    "attachments/Pasted image 20240121171146.png~",
-    "Untitled",
-    "attachments/Pasted image 20231213143955.png~",
-    "year_1/calculus/Untitled",
-    "attachments/Pasted image 20231211143424.png~",
-    "attachments/Pasted image 20231211135449.png~"
+    "year_1/discrete_math/Group.md",
+    "attachments/Pasted image 20240430094817.png",
+    "attachments/Pasted image 20240430094401.png",
+    "year_1/linear_algebra/temp_matrix/Invertible Matrix.md",
+    "year_1/linear_algebra/Function Space.md",
+    "year_1/linear_algebra/Linear, Bilinear, and Multilinear Forms.md",
+    "year_1/linear_algebra/temp_matrix/vectorspace algebra.md",
+    "year_1/linear_algebra/Algebra (over a field).md",
+    "attachments/Pasted image 20240429122426.png",
+    "attachments/Pasted image 20240429122328.png",
+    "year_1/linear_algebra/Linear Subspace.md",
+    "year_1/linear_algebra/Dual Space (algebraic).md",
+    "year_1/linear_algebra/Bilinear and Multilinear Maps.md",
+    "year_1/linear_algebra/Untitled 1.md",
+    "attachments/Pasted image 20240428183443.png",
+    "year_1/linear_algebra/temp_matrix/General Linear Group.md",
+    "attachments/Pasted image 20240428074739.png",
+    "attachments/Pasted image 20240428074039.png",
+    "year_1/linear_algebra/Homomorphism (algebraic).md",
+    "year_1/linear_algebra/Coordinate Vector.md",
+    "year_1/linear_algebra/Euclidean Space.md",
+    "year_1/linear_algebra/Inner Product Space.md",
+    "year_1/linear_algebra/Hilbert Space.md",
+    "year_1/linear_algebra/temp_matrix",
+    "attachments/Pasted image 20240426082053.png~",
+    "attachments/Pasted image 20240426082028.png~",
+    "attachments/Pasted image 20240426082016.png~",
+    "attachments/Pasted image 20240425152225.png~",
+    "attachments/Pasted image 20240425152053.png~",
+    "attachments/Pasted image 20240422080352.png~",
+    "attachments/Pasted image 20240422055841.png~",
+    "general.sty",
+    "e/general.sty"
   ]
 }

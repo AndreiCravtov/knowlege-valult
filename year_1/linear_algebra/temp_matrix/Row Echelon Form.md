@@ -1,0 +1,4 @@
+#linear-algebra 
+
+# Pivot Position
+A pivot position in a matrix, A, is a position in the matrix that corresponds to a row–leading 1 in the [reduced row echelon form](https://en.wikipedia.org/wiki/Reduced_row_echelon_form "Reduced row echelon form") of A. Since the reduced row echelon form of A is unique, the pivot positions are uniquely determined and do not depend on whether or not row interchanges are performed in the reduction process. Also, the pivot of a row must appear to the right of the pivot in the above row in [row echelon form](https://en.wikipedia.org/wiki/Row_echelon_form "Row echelon form").
